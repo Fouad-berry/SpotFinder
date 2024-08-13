@@ -4,7 +4,7 @@ import Home from '../Screens/Home';
 import Fav from '../Screens/Fav';
 import Search from '../Screens/Search';
 import Profile from '../Screens/Profile';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, FontAwesome } from '@expo/vector-icons';
 
 
 
@@ -32,14 +32,14 @@ export default function TabNavigation() {
         options={{
           tabBarLabel: 'Favoris',
           tabBarIcon: ({color, size}) => (
-            <Ionicons name="home" color={color} size={size} />
+            <Ionicons name="heart-outline" color={color} size={size} />
           ),
         }}/>
         <Tab.Screen name="Profile" component={Profile} 
         options={{
           tabBarLabel: 'Profile',
           tabBarIcon: ({color, size}) => (
-            <Ionicons name="home" color={color} size={size} />
+            <FontAwesome name="user-circle-o" color={color} size={size} />
           ),
         }}/>
     </Tab.Navigator>

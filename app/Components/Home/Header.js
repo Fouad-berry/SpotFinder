@@ -1,11 +1,15 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { StyleSheet, TextInput } from 'react-native-web'
+import { Dimensions, StyleSheet, TextInput } from 'react-native-web'
 import { SearchBar } from 'react-native-screens'
+import Colors from '../../Shared/Colors'
 
 export default function Header() {
   return (
-    <View>
+    <View style={{display:'flex', flexDirection:'row',
+        justifyContent:'space-evenly', gap:10,
+        alignItems:'center'
+        }}>
         <Image source={require('../../../assets/images/logo.png')}
         style={styles.logo}/>
 
@@ -28,10 +32,11 @@ const styles = StyleSheet.create({
     },
     searchBar:{
         borderWidth:1,
-        borderColor:'#000',
+        borderColor:Colors.black,
         padding:4,
         borderRadius:50,
-        paddingLeft:10
+        paddingLeft:10,
+        width:Dimensions.get('screen').width*0.6
     },
     userImage:{
         width:50,

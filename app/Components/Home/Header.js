@@ -1,6 +1,6 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
-import { Dimensions, StyleSheet, TextInput } from 'react-native-web'
+import { Dimensions, StyleSheet, TextInput } from 'react-native'
 import { SearchBar } from 'react-native-screens'
 import Colors from '../../Shared/Colors'
 

@@ -39,7 +39,10 @@ export default function GoogleMapView() {
                 >
                     <Marker 
                     title="Moi" 
-                    coordinate={mapRegion}
+                    coordinate={{
+                        longitude: mapRegion.longitude ? mapRegion.longitude : 0,
+                        latitude: mapRegion.latitude ? mapRegion.latitude : 0,
+                    }}
                     />
                 </MapView>
             </View>

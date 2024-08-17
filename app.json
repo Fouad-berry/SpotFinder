@@ -13,14 +13,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "googleMapsApiKey":"AIzaSyBulXEuwynSl7cZ8TdP6GACDT3on4oEs4s" 
+      "googleMapsApiKey": "AIzaSyBulXEuwynSl7cZ8TdP6GACDT3on4oEs4s"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "package":"com.fouad.spotfinder",
-        "googleMapsApiKey":"AIzaSyBulXEuwynSl7cZ8TdP6GACDT3on4oEs4s" 
+        "package": "com.fouad.spotfinder",
+        "googleMapsApiKey": "AIzaSyBulXEuwynSl7cZ8TdP6GACDT3on4oEs4s"
       }
     },
     "web": {
@@ -34,7 +34,8 @@
         {
           "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
-      ]
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true

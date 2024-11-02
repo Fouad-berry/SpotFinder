@@ -30,14 +30,14 @@ export default function TabNavigation() {
         }}/>
         <Tab.Screen name="Fav" component={Fav} 
         options={{
-          tabBarLabel: 'Favoris',
+          tabBarLabel: 'Mes Favoris',
           tabBarIcon: ({color, size}) => (
             <Ionicons name="heart-outline" color={color} size={size} />
           ),
         }}/>
         <Tab.Screen name="Profile" component={Profile} 
         options={{
-          tabBarLabel: 'Profile',
+          tabBarLabel: 'Mon Profile',
           tabBarIcon: ({color, size}) => (
             <FontAwesome name="user-circle-o" color={color} size={size} />
           ),

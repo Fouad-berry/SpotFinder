@@ -13,7 +13,7 @@ export default function App() {
         (async () => {
             let { status } = await Location.requestForegroundPermissionsAsync();
             if (status !== 'granted') {
-            setErrorMsg('Acess denied');
+            setErrorMsg('Acess denied , contact your operator');
             return;
             }
     
